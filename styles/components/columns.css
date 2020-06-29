@@ -1,0 +1,28 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.row > .column {
+  padding: 10px;
+}
+
+.row-large {
+  margin: 0 -40px;
+
+}
+.row-large > .column {
+  padding: 10px 40px;
+}
+
+.header-row {
+  justify-content: space-between;
+}
+.nowrap {
+	margin:0;
+  flex-wrap: nowrap;
+}
+.nowrap> .column {
+	padding: 1px;
+}

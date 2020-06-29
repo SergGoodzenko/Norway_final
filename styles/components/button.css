@@ -1,0 +1,91 @@
+.button {
+  display: inline-block;
+  margin: 15px auto;
+  border: 1px solid transparent;
+  font-size: 16px;
+  line-height: inherit;
+  font-family: inherit;
+  padding: 15px 66px;
+  font-weight: bold;
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+text-align: center;
+
+}
+.button:hover {
+  text-decoration: none;
+}
+
+.button:focus {
+  outline: none;
+}
+.button-full {
+  width: 100%;
+}
+.button-primary {
+  border-radius: 133px;
+  color: #ffffff;
+  background: #FF0032;
+  border: 3px solid transparent;
+}
+.button-primary:hover {
+  color: #FF0032;
+  background-color: #ffffff;
+  border: 3px solid #FF0032 ;
+}
+
+
+.button-success {
+  color: #ffffff;
+  background-color: green;
+}
+.button-success:hover {
+  color: green;
+  background-color: #ffffff;
+  border-color: green;
+}
+
+.button-danger {
+  color: #ffffff;
+  background-color: red;
+}
+.button-danger:hover {
+  color: red;
+  background-color: #ffffff;
+  border-color: red;
+}
+
+.button-large {
+  padding: 16px 32px;
+}
+
+.button-small {
+  padding: 4px 8px;
+}
+.button-play {
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid transparent;
+  padding:32px;
+}
+.button-play:hover{
+border: 2px solid aqua;
+}
+
+.button-social{
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #fff;
+  padding:10px;
+
+}
+.button-social: hover{
+  background: green;
+  border: 2px solid #fff;
+ 
+
+}
