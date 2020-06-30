@@ -5,7 +5,7 @@
   margin-bottom: 0;
 }
 html {
-  font-family: "Roboto";
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.15;
@@ -84,22 +84,35 @@ li {
 }
 .list {
   padding-left: 0;
+  justify-content: center;
 }
 .social-icon {
   color: #fff;
-  width: 17px;
-  height: 17px;
+  width: 24px;
+  height: 24px;
+}
+.logo {
+  width: 80%;
+  margin: 20px auto;
 }
 
-.logo {
-  width: 136px;
-  padding: 30px auto;
+@media (min-width: 480px) {
+  .logo {
+    width: 136px;
+    padding: 30px;
+  }
+}
+.logo-foot {
+  width: 135px;
 }
 .header {
   display: flex;
   justify-content: space-between;
 }
-.fb-account {
+/*.fb-account {
   display: flex;
+  padding-right: 10px;
+}*/
+.icon {
   padding-right: 10px;
 }

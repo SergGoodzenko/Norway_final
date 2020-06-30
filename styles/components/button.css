@@ -37,43 +37,6 @@
   border: 3px solid #ff0032;
 }
 
-.button-success {
-  color: #ffffff;
-  background-color: green;
-}
-.button-success:hover {
-  color: green;
-  background-color: #ffffff;
-  border-color: green;
-}
-
-.button-danger {
-  color: #ffffff;
-  background-color: red;
-}
-.button-danger:hover {
-  color: red;
-  background-color: #ffffff;
-  border-color: red;
-}
-
-.button-large {
-  padding: 16px 32px;
-}
-
-.button-small {
-  padding: 4px 8px;
-}
-.button-play {
-  border-radius: 50%;
-  background: transparent;
-  border: 2px solid transparent;
-  padding: 32px;
-}
-.button-play:hover {
-  border: 2px solid aqua;
-}
-
 .button-social {
   border-radius: 50%;
   background: transparent;

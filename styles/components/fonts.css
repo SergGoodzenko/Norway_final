@@ -1,0 +1,7 @@
+@font-face {
+  font-family: Gilroy; /* Имя шрифта */
+  src: url(../fonts/Gilroy-Light.otf); /* Путь к файлу со шрифтом */
+}
+p {
+  font-family: Gilroy;
+}
