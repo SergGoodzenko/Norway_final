@@ -1,72 +1,85 @@
 .card {
-  text-align: center;
-  border: 1px solid transparent;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  border: transparent;
+  background: white;
+  overflow: hidden;
+  border-radius: 25px;
+  /* transition: 0.4s linear;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
-/*.card:hover:nth-child (){
-	border-bottom: 1px solid maroon;
+.card-img {
+  transition: 1s ease-in-out;
 }
-.card:hover{
-	border-bottom:1px solid black;
-}*/
+.card-img:hover {
+  transform: scale(1.1);
+}
+.card-img img {
+  width: 100%;
+  object-fit: cover;
+}
 .card-title {
-  text-transform: uppercase;
+  font-weight: bold;
   font-size: 20px;
-  font-weight: 600;
+  line-height: 24px;
+  color: #373f55;
 }
 .card-description {
-  padding: 20px auto;
+  font-size: 16px;
+  color: #464649;
 }
-.card-image {
-
-}
-.card-image > img {
-
-  margin: 0 auto;
-}
-.icon {
-  font-size: 82px;
-}
-.icon-map{
-  color:#fff;
-  width: 50px;
-}
-.card-team{
-  border: 1px solid #fff;
+.card-body {
+  padding: 30px 17px;
+  flex-grow: 1;
 }
 
+.price {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #373f55;
+}
+.stars {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  margin: 7px 0;
+}
+.stars:before {
+  content: "\f005\f005\f005\f005\f006";
+  color: #efb71c;
+  font-size: 20px;
+  font-family: FontAwesome;
+}
+.reviews,
+.duraction {
+  padding-left: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #888ea0;
+}
+.card-footer {
+  padding: 0 17px;
+  display: flex;
+  color: #888ea0;
+  justify-content: space-between;
+}
 
-.card-rating {
-    padding: 5px;
-    font-size: 12px;
-    color: gray;
-    
-    &.card-rating-1 {
-      i:nth-child(-n+1) {
-        color: orange;
-      }
-    }
-    
-    &.card-rating-2 {
-      i:nth-child(-n+2) {
-        color: orange;
-      }
-    }
-    
-    &.card-rating-3 {
-      i:nth-child(-n+3) {
-        color: orange;
-      }
-    }
-    
-    &.card-rating-4 {
-      i:nth-child(-n+4) {
-        color: orange;
-      }
-    }
-    
-    &.card-rating-5 {
-      i:nth-child(-n+5) {
-        color: orange;
-      }
-    }
- }
+.card-simple {
+  overflow: hidden;
+  border-radius: 25px;
+  
+}
+.card-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #464649;
+  max-width:497px;
+  margin:
+}
+.

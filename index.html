@@ -2,55 +2,97 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
     <title>Norway</title>
   </head>
+
   <body>
     <div class="wrapper">
       <header class="header">
-           <div class="container">
-            <div class="row header-row">
-              <a class="calling-link">
-                <span >+486556665</span>
-              </a>
-               <a href="#" class="logo logo-top"
-                  ><img src="Images/North.png" alt="logo"/></a>
-              <a class=" row fb-account">
-                <
-                <img class="iconfb" src="Images/Mask Group.png" alt="mask"/>
-                <p class="">Elena</p>
-              </a>
+        <div class="container">
+          <div class="row header-top">
+            <div class="column width-1-1 width-1-3-sm">
+              <div class="row">
+                <figure class="icon">
+                  <img class="social-icon" src="Images/phone.svg" alt="/" />
+                </figure>
+                <span>+47-124-82-232</span>
+              </div>
             </div>
-              
-                <nav class="nav">
-                  <span class="nav-item is-active" href="#">Home</span>
-                  <a class="nav-item" href="#">Search for tours</a>
-                  <a class="nav-item" href="#">Popular tours</a>
-                  <a class="nav-item" href="#">Daily tours</a>
-                  <a class="nav-item" href="#">About us</a>
-                  <a class="nav-item" href="#">Reviews</a>
-                  <a class="nav-item" href="#">Contacts</a>
-                </nav>
-           </div>
+            <div class="column width-1-1 width-1-3-sm">
+              <a href="#" class="logo logo-top"
+                ><img src="Images/North.png" alt="logo"
+              /></a>
+            </div>
+            <div class="column width-1-1 width-1-3-sm">
+              <div class="row">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <figure class="">
+                  <img class="iconfb" src="Images/Mask Group.png" alt="mask" />
+                </figure>
+                <span class="account">Elena</span>
+              </div>
+            </div>
+          </div>
+          <div class="burger-menu">
+            <nav class="nav">
+              <span class="nav-item is-active" href="#">Home</span>
+              <a class="nav-item" href="#">Search for tours</a>
+              <a class="nav-item" href="#">Popular tours</a>
+              <a class="nav-item" href="#">Daily tours</a>
+              <a class="nav-item" href="#">About us</a>
+              <a class="nav-item" href="#">Reviews</a>
+              <a class="nav-item" href="#">Contacts</a>
+            </nav>
+            <nav class="nav-mobile">
+              <a class="nav-item" href="#">
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </a>
+              <a class="nav-item" href="#">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </a>
+              <a class="nav-item" href="#">
+                <i class="fa fa-address-book-o" aria-hidden="true"></i>
+              </a>
+              <a class="nav-item" href="#">
+                <i class="fa fa-handshake-o" aria-hidden="true"></i>
+              </a>
+              <a class="nav-item" href="#">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </a>
+            </nav>
+          </div>
+        </div>
       </header>
       <main class="main">
         <section class="section section-hero">
           <figure class="section-background">
-            <img
-              src="Images/bghero.png"
-              alt="forest"
-            />
-          </figure> 
+            <img src="Images/bghero.png" alt="forest" />
+          </figure>
           <div class="container">
             <div class="section-foreground">
               <div class="section-body">
                 <div class="section-content">
                   <h1 class="section-title hero-title">Norway Excursions</h1>
-                  <p class="section-description">We have years of experience. Whether you are traveling to Norway by plane, bus or cruise ship, our excursions are available and accessible for everyone.
+                  <p class="section-description">
+                    We have years of experience. Whether you are traveling to
+                    Norway by plane, bus or cruise ship, our excursions are
+                    available and accessible for everyone.
                   </p>
                   <button class="button button-primary">View all tours</button>
                 </div>
@@ -60,529 +102,412 @@
         </section>
         <section class="section section-form">
           <div class="container">
-            <div class="section-content">
-              <h2 class="section-title">Search for tours</h2>
-              <form class="row" method="#">
-                <div class="form-control column width-1-4">
-                  <label>
-                       <span class="label">Category</span>
-                       <select  class="select" name="category">
-                         <option value="Lowcoast" >Lowcoast</option>
-                         <option value="All " selected>All</option>
-                         <option value="best">Just best</option>
-                       </select>
-                     </label>
-                </div>
-                <div class="form-control column width-1-4">
-                   <label>
-                       <span class="label">Tag</span>
-                       <select class="select" name="tag">
-                         <option value="Nordfird" >Westfird</option>
-                         <option value="Nordfird2" selected>Nordfird</option>
-                         <option value="Nordfird3">Eastfird</option>
-                       </select>
-                     </label>
-                </div>
-                <div class="form-control column width-1-4">
-                  <label>
-                       <span class="label">Durection</span>
-                       <select class="select" name="day">
-                         <option value="Friday" >Friday</option>
-                         <option value="Saturday " selected>1 day</option>
-                         <option value="Sunday">Sunday</option>
-                       </select>
-                     </label>
-                </div>
-                <div class="form-control column width-1-4">
-                   <label>
-                       <span class="label">Price</span>
-                       <select  class="select" name="price">
-                         <option value="just" >just 70$</option> 
-                         <option value="Less" selected>Less than 70$</option>
-                         <option value="More">More than 70$</option>
-                       </select>
-                     </label>
-                </div> 
-              </form>
-              <button class="button button-primary">Find tours</button>
-          </div>
+            <h2 class="section-title">Search for tours</h2>
+            <form class="row form" method="#">
+              <div class="form-control width-1-1  width-1-2-sm  width-1-4-lg">
+                <label>
+                  <span class="label">Category</span>
+                  <select class="select" name="category">
+                    <option value="Lowcoast">Lowcoast</option>
+                    <option value="All" selected>All</option>
+                    <option value="best">Just best</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form-control width-1-1  width-1-2-sm  width-1-4-lg">
+                <label>
+                  <span class="label">Tag</span>
+                  <select class="select" name="tag">
+                    <option value="Nordfird">Westfird</option>
+                    <option value="Nordfird2" selected>Nordfird</option>
+                    <option value="Nordfird3">Eastfird</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form-control width-1-1  width-1-2-sm  width-1-4-lg">
+                <label>
+                  <span class="label">Durection</span>
+                  <select class="select" name="day">
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday " selected>1 day</option>
+                    <option value="Sunday">Sunday</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form-control width-1-1  width-1-2-sm  width-1-4-lg">
+                <label>
+                  <span class="label">Price</span>
+                  <select class="select" name="price">
+                    <option value="just">just 70$</option>
+                    <option value="Less" selected>Less than 70$</option>
+                    <option value="More">More than 70$</option>
+                  </select>
+                </label>
+              </div>
+            </form>
+            <button class="button button-primary">Find tours</button>
           </div>
         </section>
         <section class="section section-mountains">
           <figure class="section-background">
-            <img
-              src="Images/mountains.png"
-              alt="forest"
-            />
-          </figure> 
-        </section>
-        <section class="section section-form">
-          <div class="container">
-            <h2 class="section-title">Search for tours</h2>
-            <div class="slider slider-nav">
-              <div><h3>1</h3></div>
-              <div><h3>2</h3></div>
-              <div><h3>3</h3></div>
-              <div><h3>4</h3></div>
-              <div><h3>5</h3></div>
-            </div>
-          </div>
-        </section>
-        <section class="section section-form"></section>
-        <section class="section section-form"></section>
-     <!--   <section class="section section-story">
-          <div class="container">
-            <div class="row row-large">
-              <div class="column width-2-5">
-                <figure>
-                  <img src="Images/mountains.png" alt="logo" />
-                </figure>
-              </div>
-              <div class="column width-3-5">
-                <h2 class="section-title">OUR STORY</h2>
-                <p class="section-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit. Iure
-                  mollitia aperiam alias, pariatur repellat labore quisquam
-                  error accusamus, aspernatur suscipit odio deleniti provident
-                  cumque fugit tenetur.
-                </p>
-                <button class="button button-primary">Button</button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section section-color section-video">
-          <figure class="section-background">
-            <img src="Images/poster-video.png" alt="forest" />
+            <img src="Images/mountains.png" alt="forest" />
           </figure>
-          <div class="section-overlay"></div>
-          <div class="container">
-            <div class="section-foreground">
-              <div class="section-body">
-                <div class="section-content">
-                  <button class="button-play">
-                    <img
-                          src="Images/play.svg"
-                           alt="За стеклом">
-                  </button>
-                  <h2 class="section-title">
-                  WHATCH OUR STORY
-                </h2>
+        </section>
+        <section class="section section-populartours">
+          <h2 class="section-title">Popular tours</h2>
+          <div class="container-sliders">
+            <div class="slider">
+              <div class="slider__item filter">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="Images/card1.png" alt="img" />
+                  </div>
+                  <div class="card-body">
+                    <div class="stars"></div>
+                    <span class="reviews">125 Reviews</span>
+                    <p class="card-title">
+                      Northern Lights and Snowmobile riding
+                    </p>
+                    <p class="card-description">
+                      Seeing the northern lights can be hard under the bright
+                      lights
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="duraicion">duration - 12 hours</p>
+                    <span class="price"> 95€ </span>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="Images/card2.png" alt="img" />
+                  </div>
+                  <div class="card-body">
+                    <div class="stars"></div>
+                    <span class="reviews">168 Reviews</span>
+                    <p class="card-title">
+                      Reindeer Feeding and Lasso Throwing
+                    </p>
+                    <p class="card-description">
+                      Immerse yourself in Sami culture and feed a herd of 200
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="duraicion">duration - 5 hours</p>
+                    <span class="price"> 60€ </span>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item filter">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="Images/card3.png" alt="img" />
+                  </div>
+                  <div class="card-body">
+                    <div class="stars"></div>
+                    <span class="reviews">170 Reviews</span>
+                    <p class="card-title">
+                      Self-Guided Norway roundtrip: Oslo
+                    </p>
+                    <p class="card-description">
+                      Experience Norway, and see Scandinavian scenery on this
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="duraicion">duration - 10 hours</p>
+                    <span class="price"> 80€ </span>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="Images/card4.png" alt="img" />
+                  </div>
+                  <div class="card-body">
+                    <div class="stars"></div>
+                    <span class="reviews">125 Reviews</span>
+                    <p class="card-title">
+                      Drive a Husky Sled in Tromso
+                    </p>
+                    <p class="card-description">
+                      Seeing the northern lights can be hard under the bright
+                      lights
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="duraicion">duration - 3 hours</p>
+                    <span class="price"> 75€ </span>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item filter">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="Images/card3.png" alt="img" />
+                  </div>
+                  <div class="card-body">
+                    <div class="stars"></div>
+                    <span class="reviews">170 Reviews</span>
+                    <p class="card-title">
+                      Self-Guided Norway roundtrip: Oslo
+                    </p>
+                    <p class="card-description">
+                      Experience Norway, and see Scandinavian scenery on this
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="duraicion">duration - 10 hours</p>
+                    <span class="price"> 80€ </span>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="Images/card3.png" alt="img" />
+                  </div>
+                  <div class="card-body">
+                    <div class="stars"></div>
+                    <span class="reviews">170 Reviews</span>
+                    <p class="card-title">
+                      Self-Guided Norway roundtrip: Oslo
+                    </p>
+                    <p class="card-description">
+                      Experience Norway, and see Scandinavian scenery on this
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="duraicion">duration - 10 hours</p>
+                    <span class="price"> 80€ </span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <button class="button button-primary">View all daily tours</button>
         </section>
-        <section class="section section-center section-expertise">
+        <section class="section section-card">
+          <figure class="section-background">
+            <img src="Images/bgbig.png" alt="big" />
+          </figure>
           <div class="container">
-            <h2 class="section-title">EXPERTISE</h2>
-            <p class="section-description">
-              Lorem ipsum dolor sit amet proin gravida nibh vel velit
-            </p>
-            <hr />
+            <h2 class="section-title">Daily tours</h2>
             <div class="row">
-              <div class="column width-1-3">
+              <div
+                class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
+              >
                 <div class="card">
-                  <div class="icon">&#9883;</div>
-                  <h4 class="card-title">title</h4>
-                  <p class="card-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
+                  <div class="card-img">
+                    <img src="Images/card12.png" alt="img" />
+                  </div>
+                  <div class="card-body">
+                    <div class="stars"></div>
+                    <span class="reviews">168 Reviews</span>
+                    <p class="card-title">
+                      Reindeer Feeding and Lasso Throwing
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="duraicion">duration - 5 hours</p>
+                    <span class="price"> 60€ </span>
+                  </div>
                 </div>
               </div>
-              <div class="column width-1-3">
+              <div
+                class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
+              >
                 <div class="card">
-                  <div class="icon">&#9883;</div>
-                  <h4 class="card-title">title</h4>
-                  <p class="card-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
+                  <div class="card-img">
+                    <img src="Images/card5.png" alt="img" />
+                  </div>
+                  <div class="card-body">
+                    <div class="stars"></div>
+                    <span class="reviews">168 Reviews</span>
+                    <p class="card-title">
+                      Reindeer Feeding and Lasso Throwing
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="duraicion">duration - 5 hours</p>
+                    <span class="price"> 60€ </span>
+                  </div>
                 </div>
               </div>
-              <div class="column width-1-3">
+              <div
+                class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
+              >
                 <div class="card">
-                  <div class="icon">&#9883;</div>
-                  <h4 class="card-title">title</h4>
-                  <p class="card-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
+                  <div class="card-img">
+                    <img src="Images/card6.png" alt="img" />
+                  </div>
+                  <div class="card-body">
+                    <div class="stars"></div>
+                    <span class="reviews">168 Reviews</span>
+                    <p class="card-title">
+                      Reindeer Feeding and Lasso Throwing
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="duraicion">duration - 5 hours</p>
+                    <span class="price"> 60€ </span>
+                  </div>
                 </div>
               </div>
-              <div class="column width-1-3">
+              <div
+                class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
+              >
                 <div class="card">
-                  <div class="icon">&#9883;</div>
-                  <h4 class="card-title">title</h4>
-                  <p class="card-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
+                  <div class="card-img">
+                    <img src="Images/card7.png" alt="img" />
+                  </div>
+                  <div class="card-body">
+                    <div class="stars"></div>
+                    <span class="reviews">168 Reviews</span>
+                    <p class="card-title">
+                      Reindeer Feeding and Lasso Throwing
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="duraicion">duration - 5 hours</p>
+                    <span class="price"> 60€ </span>
+                  </div>
                 </div>
               </div>
-              <div class="column width-1-3">
+              <div
+                class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
+              >
                 <div class="card">
-                  <div class="icon">&#9883;</div>
-                  <h4 class="card-title">title</h4>
-                  <p class="card-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
-                  <div class="card-rating card-rating-2">
-      <i class="fa fa-star" aria-hidden="true"></i>
-      <i class="fa fa-star" aria-hidden="true"></i>
-      <i class="fa fa-star" aria-hidden="true"></i>
-      <i class="fa fa-star" aria-hidden="true"></i>
-      <i class="fa fa-star" aria-hidden="true"></i>
-    </div>
-  </div>
+                  <div class="card-img">
+                    <img src="Images/card8.png" alt="img" />
+                  </div>
+                  <div class="card-body">
+                    <div class="stars"></div>
+                    <span class="reviews">168 Reviews</span>
+                    <p class="card-title">
+                      Reindeer Feeding and Lasso Throwing
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="duraicion">duration - 5 hours</p>
+                    <span class="price"> 60€ </span>
+                  </div>
                 </div>
               </div>
-              <div class="column width-1-3">
+              <div
+                class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
+              >
                 <div class="card">
-                  <div class="icon">&#9883;</div>
-                  <h4 class="card-title">title</h4>
-                  <p class="card-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
+                  <div class="card-img">
+                    <img src="Images/card11.png" alt="img" />
+                  </div>
+                  <div class="card-body">
+                    <div class="stars"></div>
+                    <span class="reviews">168 Reviews</span>
+                    <p class="card-title">
+                      Reindeer Feeding and Lasso Throwing
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="duraicion">duration - 5 hours</p>
+                    <span class="price"> 60€ </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
+              >
+                <div class="card">
+                  <div class="card-img">
+                    <img src="Images/card9.png" alt="img" />
+                  </div>
+                  <div class="card-body">
+                    <div class="stars"></div>
+                    <span class="reviews">168 Reviews</span>
+                    <p class="card-title">
+                      Reindeer Feeding and Lasso Throwing
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="duraicion">duration - 5 hours</p>
+                    <span class="price"> 60€ </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
+              >
+                <div class="card">
+                  <div class="card-img">
+                    <img src="Images/card10.png" alt="img" />
+                  </div>
+                  <div class="card-body">
+                    <div class="stars"></div>
+                    <span class="reviews">168 Reviews</span>
+                    <p class="card-title">
+                      Reindeer Feeding and Lasso Throwing
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="duraicion">duration - 5 hours</p>
+                    <span class="price"> 60€ </span>
+                  </div>
                 </div>
               </div>
             </div>
+            <button class="button button-primary">View all daily tours</button>
           </div>
         </section>
-        <section class="section section-color section-team">
-          <figure class="section-background">
-            <img
-              src="Images/hero-bg-default.png"
-              alt="forest"
-            />
-          </figure>
-          <div class="section-overlay"></div>
+        <section class="section section-whoweare">
           <div class="container">
-            <div class="section-foreground">
-              <div class="section-body">
-                <div class="section-content">
-                  <h1 class="section-title">Title</h1>
-                  <p class="section-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
-                  <hr />
-                  <div class="row">
-                    <div class="column width-1-4">
-                      <div class="card card-team">
-                        <figure class="card-image">
-                          <img
-                            src="https://www.tlcchiropractic.co.za/wp-content/uploads/2019/07/cropped-Blank-White-Image.jpg"
-                            alt=""
-                          />
-                        </figure>
-                        <h3 class="card-title">Jane Smith</h3>
-                        <h5 class="card-description">Lorem ipsum dolor sit amet </h5>
-                      </div>
-                    </div>
-                    <div class="column width-1-4">
-                      <div class="card card-team">
-                        <figure class="card-image">
-                          <img
-                            src="https://www.tlcchiropractic.co.za/wp-content/uploads/2019/07/cropped-Blank-White-Image.jpg"
-                            alt=""
-                          />
-                        </figure>
-                        <h3 class="card-title">Jane Smith</h3>
-                        <h5 class="card-description">Lorem ipsum dolor sit amet </h5>
-                      </div>
-                    </div>
-                    <div class="column width-1-4">
-                      <div class="card card-team">
-                        <figure class="card-image">
-                          <img
-                            src="https://www.tlcchiropractic.co.za/wp-content/uploads/2019/07/cropped-Blank-White-Image.jpg"
-                            alt=""
-                          />
-                        </figure>
-                        <h3 class="card-title">Jane Smith</h3>
-                        <h5 class="card-description">Lorem ipsum dolor sit amet </h5>
-                      </div>
-                    </div>
-                    <div class="column width-1-4">
-                      <div class="card card-team">
-                        <figure class="card-image">
-                          <img
-                            src="https://www.tlcchiropractic.co.za/wp-content/uploads/2019/07/cropped-Blank-White-Image.jpg"
-                            alt=""
-                          />
-                        </figure>
-                        <h3 class="card-title">Jane Smith</h3>
-                        <h5 class="card-description">Lorem ipsum dolor sit amet </h5>
-                      </div>
+            <h2 class="section-title">Who we are?</h2>
+            <div class="row aline-center space-between">
+              <div class="column width-1-1 width-1-2-sm">
+                <div class="row card-simple">
+                  <div class="column width-1-2">
+                    <div class="card-img">
+                      <img src="Images/1.png" alt="img" />
                     </div>
                   </div>
-                  <p class="section-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iure mollitia aperiam alias, pariatur repellat labore
-                    quisquam error accusamus, aspernatur suscipit odio deleniti
-                  </p>
-                  <button class="button button-primary">Button</button>
+                  <div class="column width-1-2">
+                    <div class="card-img">
+                      <img src="Images/2.png" alt="img" />
+                    </div>
+                  </div>
+                  <div class="column width-1-2">
+                    <div class="card-img">
+                      <img src="Images/3.png" alt="img" />
+                    </div>
+                  </div>
+                  <div class="column width-1-2">
+                    <div class="card-img">
+                      <img src="Images/4.png" alt="img" />
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div class="column width-1-1 width-1-2-sm">
+                <p class="card-text">
+                  Our company has years of experience in the world of tourism,
+                  providing excursions. We take care of our clients and all our
+                  staff is the most qualified professionals. We try to make our
+                  clients happy and make each excursion unforgettable for them.
+                  We have the newest equipment everywhere you need it. We like
+                  animals and nature, that’s why our pets the happiest and the
+                  most beautiful. Let’s travel with us. We will make your life
+                  brighter
+                </p>
+              </div>
             </div>
+            <button class="button button-primary">View all daily tours</button>
           </div>
         </section>
-        <section class="section section-center section-works">
-          <div class="container">
-            <div class="row header-row">
-              <div class="column width-1-2">
-                <h2 class="section-title">OUR WORKS</h2>
-                <form class="form-control" method="post" action="/">
-                  <div>
-                    <label for="name">
-                    <input class="input" type="text" name="name" required />
-                    </label>
-                  </div>
-                  <div>
-                    <label for="tel">
-                    <input class="input" type="tel" name="tel" required />
-                    </label>
-                  </div>
-                  <div>
-                    <label for="email">
-                    <input class="input" type="email" name="email" required />
-                    </label>
-                  </div>
-                  <div>
-                    <label for="country">Страна</label>
-                    <select class="select" name="country">
-                      <option>Выберите страну проживания</option>
-                      <option value="Россия">Россия</option>
-                      <option value="Украина">Украина</option>
-                      <option value="Беларусь">Беларусь</option>
-                    </select>
-                    <div class="select-arrow"></div>
-                  </div>
-                  <p>
-                    <textarea
-                      class="textarea"
-                      name="comment"
-                      id="comment"
-                      cols="48"
-                      rows="8"
-                    >
-                    </textarea>
-                  </p>
-              </div>
 
-            </form>
-            <button class="button button-primary" type="submit">
-                    Отправить
-                  </button>
-              <div class="column width-1-2">
-                <h2 class="">Title</h2>
-                 <div class="column width-1-2">
-                <div class="row">
-                  <div class="column width-1-2">
-                    <div class="card">
-                      <figure class="card-image">
-                        <img src="Images/brand-barneys-ny.png" alt="img" />
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="column width-1-2">
-                    <div class="card">
-                      <figure class="card-image">
-                        <img src="Images/brand-billabong.png" alt="img" />
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="column width-1-2">
-                    <div class="card">
-                      <figure class="card-image">
-                        <img src="Images/brand-calvin_klein.png" alt="img" />
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="column width-1-2">
-                    <div class="card">
-                      <figure class="card-image">
-                        <img src="Images/brand-puma.png" alt="img" />
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="column width-1-2">
-                    <div class="card">
-                      <figure class="card-image">
-                        <img src="Images/brand-zara.png" alt="img" />
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="column width-1-2">
-                    <div class="card">
-                      <figure class="card-image">
-                        <img src="Images/brand-nike.png.png" alt="img" />
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="column width-1-2">
-                    <div class="card">
-                      <figure class="card-image">
-                        <img src="Images/brand-mango.png" alt="img" />
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="column width-1-2">
-                    <div class="card">
-                      <figure class="card-image">
-                        <img src="Images/brand-levis.png" alt="img" />
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              </div>
-              <div class="row">
-              </div>
-             
-            </div>
-          </div>
-        </section>
-        <section class="section section-color ">
+        <footer class="section section-footer">
           <figure class="section-background">
-            <img
-              src="https://cdn.pixabay.com/photo/2015/06/19/21/24/the-road-815297__340.jpg"
-              alt="forest"
-            />
-          </figure>
-          <div class="section-overlay"></div>
-          <div class="container">
-            <div class="section-foreground">
-              <div class="section-body">
-                <div class="section-content">
-                  <h2 class="section-title icon">&ldquo;</h2>
-                  <p class="section-description">
-                    This is Photoshop's version of Lorem Ipsum. Proin gravida
-                    nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-                    quis bibendum auctor, nisi elit consequat ipsum, nec
-                    sagittis sem nibh id elit. Duis sed odio sit amet nibh
-                    vulputate cursus a sit amet mauris. Morbi accumsan ipsum
-                    velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
-                    Sed non mauris vitae erat consequat auctor eu in elit.
-                  </p>
-                  <button class="button button-primary">Button</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section section-center section-ourworks">
-          <div class="container">
-            <div class="row header-row ">
-              <div class="column width-1-4">
-              <h2 class="">OUR WORKS</h2>
-              </div>
-              <div class="column width-1-4">
-              <h4 class="">See All Project</h4>
-              </div>
-            </div>
-          </div>
-          <div class="row nowrap">
-            <div class="column width-1-6">
-              <div class="card">
-                      <figure class="card-image">
-                        <img src="https://quartzforms-prod.s3.amazonaws.com/uploads/product/image/3/index_Absolute_White_400.jpg" alt="img" />
-                      </figure>
-              </div>
-            </div>
-             <div class="column width-1-6">
-              <div class="card">
-                      <figure class="card-image">
-                        <img src="https://quartzforms-prod.s3.amazonaws.com/uploads/product/image/3/index_Absolute_White_400.jpg" alt="img" />
-                      </figure>
-              </div>
-            </div>
-            <div class="column width-1-6">
-              <div class="card">
-                      <figure class="card-image">
-                        <img src="https://quartzforms-prod.s3.amazonaws.com/uploads/product/image/3/index_Absolute_White_400.jpg" alt="img" />
-                      </figure>
-              </div>
-            </div>
-            <div class="column width-1-6">
-              <div class="card">
-                      <figure class="card-image">
-                        <img src="https://quartzforms-prod.s3.amazonaws.com/uploads/product/image/3/index_Absolute_White_400.jpg" alt="img" />
-                      </figure>
-              </div>
-            </div>
-            <div class="column width-1-6">
-              <div class="card">
-                      <figure class="card-image">
-                        <img src="https://quartzforms-prod.s3.amazonaws.com/uploads/product/image/3/index_Absolute_White_400.jpg" alt="img" />
-                      </figure>
-              </div>
-            </div>
-            <div class="column width-1-6">
-              <div class="card">
-                      <figure class="card-image">
-                        <img src="https://quartzforms-prod.s3.amazonaws.com/uploads/product/image/3/index_Absolute_White_400.jpg" alt="img" />
-                      </figure>
-              </div>
-            </div>
-          </div>
-           <div class="row nowrap">
-            <div class="column width-1-6">
-              <div class="card">
-                      <figure class="card-image">
-                        <img src="https://quartzforms-prod.s3.amazonaws.com/uploads/product/image/3/index_Absolute_White_400.jpg" alt="img" />
-                      </figure>
-              </div>
-            </div>
-             <div class="column width-1-6">
-              <div class="card">
-                      <figure class="card-image">
-                        <img src="https://quartzforms-prod.s3.amazonaws.com/uploads/product/image/3/index_Absolute_White_400.jpg" alt="img" />
-                      </figure>
-              </div>
-            </div>
-            <div class="column width-1-6">
-              <div class="card">
-                      <figure class="card-image">
-                        <img src="https://quartzforms-prod.s3.amazonaws.com/uploads/product/image/3/index_Absolute_White_400.jpg" alt="img" />
-                      </figure>
-              </div>
-            </div>
-            <div class="column width-1-6">
-              <div class="card">
-                      <figure class="card-image">
-                        <img src="https://quartzforms-prod.s3.amazonaws.com/uploads/product/image/3/index_Absolute_White_400.jpg" alt="img" />
-                      </figure>
-              </div>
-            </div>
-            <div class="column width-1-6">
-              <div class="card">
-                      <figure class="card-image">
-                        <img src="https://quartzforms-prod.s3.amazonaws.com/uploads/product/image/3/index_Absolute_White_400.jpg" alt="img" />
-                      </figure>
-              </div>
-            </div>
-            <div class="column width-1-6">
-              <div class="card">
-                      <figure class="card-image">
-                        <img src="https://quartzforms-prod.s3.amazonaws.com/uploads/product/image/3/index_Absolute_White_400.jpg" alt="img" />
-                      </figure>
-              </div>
-            </div>
-          </div>
-           <button class="button button-primary">Button</button>
-        </section>-->
-        <footer class="section section-color section-footer">
-          <figure class="section-background">
-            <img
-              src="Images/footer-bg-default.png"
-              alt="forest"
-            />
+            <img src="Images/footerbg.png" alt="foot" />
           </figure>
           <div class="section-overlay"></div>
           <div class="container">
@@ -592,10 +517,10 @@
                   <div class="row row-large footer-head">
                     <div class="column width-1-3">
                       <div class="list-title">
-                          <a href="#" class="logo logo-footer"
-                            ><img src="Images/logo.png" alt="logo"
-                          /></a>
-                        </div>
+                        <a href="#" class="logo logo-footer"
+                          ><img src="Images/logo.png" alt="logo"
+                        /></a>
+                      </div>
                     </div>
                     <div class="column width-1-3">
                       <h4 class="list-title">
@@ -611,103 +536,125 @@
                   <div class="row row-large footer-body">
                     <div class="column width-1-3">
                       <div class="list-wrapper">
-                        <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="section-description">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Lorem ipsum dolor sit amet consectetur
+                          adipisicing elit.
                         </p>
                       </div>
                     </div>
                     <div class="column width-1-3">
-                      <ul
-                        class="list row"
-                      >
+                      <ul class="list row">
                         <li class="column width-1-1 row">
                           <figure class="column width-1-4">
-                            <img class="social-icon"
-                          src="Images/map.svg"
-                           alt="/">
+                            <img
+                              class="social-icon"
+                              src="Images/map.svg"
+                              alt="/"
+                            />
                           </figure>
-                          <span class="column width-3-4">New York/Lorem ipsum dolor</span>
+                          <span class="column width-3-4"
+                            >New York/Lorem ipsum dolor</span
+                          >
                         </li>
                         <li class="column width-1-1 row">
                           <figure class="column width-1-4">
-                            <img class="social-icon"
-                          src="Images/phone.svg"
-                           alt="/">
+                            <img
+                              class="social-icon"
+                              src="Images/phone.svg"
+                              alt="/"
+                            />
                           </figure>
-                          <span class="column width-3-4">+62 (333) 99884488</span>
+                          <span class="column width-3-4"
+                            >+62 (333) 99884488</span
+                          >
                         </li>
                       </ul>
                     </div>
                     <div class="column width-1-3">
-                      
                       <form class="form" action="action_page.php">
-                         <input class="search-line" type="text" placeholder="Search.." name="search">
-                         <button class="button" type="submit"><i class="fa fa-send"></i></button>
-                        </form>
+                        <input
+                          class="search-line"
+                          type="text"
+                          placeholder="Search.."
+                          name="search"
+                        />
+                        <button class="button" type="submit">
+                          <i class="fa fa-send"></i>
+                        </button>
+                      </form>
                       <ul class="list row nowrap">
-                        <!--
                         <li>
                           <button class="button-social">
-                            <img src="https://img.icons8.com/material-sharp/24/000000/facebook-f.png"/>
+                            <img
+                              class="social-icon"
+                              src="Images/twitter.svg"
+                              alt="/"
+                            />
                           </button>
                         </li>
                         <li>
                           <button class="button-social">
-                            <img src="https://img.icons8.com/ios-filled/50/000000/vkontakte--v1.png"/>
-                          </button>
-                        </li>-->
-                        <li>
-                          <button class="button-social">
-                            <img class="social-icon"
-                          src="Images/twitter.svg"
-                           alt="/">
+                            <img
+                              class="social-icon"
+                              src="Images/google.svg"
+                              alt="/"
+                            />
                           </button>
                         </li>
                         <li>
                           <button class="button-social">
-                            <img class="social-icon"
-                          src="Images/google.svg"
-                           alt="/">
+                            <img
+                              class="social-icon"
+                              src="Images/youtube.svg"
+                              alt="/"
+                            />
                           </button>
                         </li>
                         <li>
                           <button class="button-social">
-                            <img class="social-icon"
-                          src="Images/youtube.svg"
-                           alt="/">
+                            <img
+                              class="social-icon"
+                              src="Images/facebook.svg"
+                              alt="/"
+                            />
                           </button>
                         </li>
                         <li>
                           <button class="button-social">
-                            <img class="social-icon"
-                          src="Images/facebook.svg"
-                           alt="/">
-                          </button>
-                        </li>
-                        <li><button class="button-social">
-                            <img class="social-icon"
-                          src="Images/instagram.svg"
-                           alt="/">
+                            <img
+                              class="social-icon"
+                              src="Images/instagram.svg"
+                              alt="/"
+                            />
                           </button>
                         </li>
                       </ul>
                     </div>
                   </div>
                   <header class="row footer-nav">
-                     <nav class="nav">
-                       <a class="nav-item nav-fot-item" href="#">HELP</a>
-                       <a class="nav-item nav-fot-item" href="#">TIME & CONCEPTIONS</a>
-                       <a class="nav-item nav-fot-item" href="#">PRIVACY</a>
-                     </nav>
-                     <div class="">Copyrite 2015 - Tajem Copyright</div>
-                
-                 </header>
+                    <nav class="nav">
+                      <a class="nav-item nav-fot-item" href="#">HELP</a>
+                      <a class="nav-item nav-fot-item" href="#"
+                        >TIME & CONCEPTIONS</a
+                      >
+                      <a class="nav-item nav-fot-item" href="#">PRIVACY</a>
+                    </nav>
+                    <div class="">Copyrite 2015 - Tajem Copyright</div>
+                  </header>
                 </div>
               </div>
             </div>
           </div>
-        </footer> 
+        </footer>
       </main>
     </div>
+    <!-- Подключаем jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Подключаем слайдер Slick -->
+    <script src="js/slick.min.js"></script>
+    <!-- Подключаем файл скриптов -->
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

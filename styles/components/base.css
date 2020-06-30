@@ -8,7 +8,7 @@ html {
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.15;
   background-color: #ffffff;
   color: #3c3c3c;
 }
@@ -17,7 +17,7 @@ html {
   overflow: hidden;
 }
 .container {
-  max-width: 982px;
+  max-width: 1172px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -75,25 +75,31 @@ hr {
   border: none;
   /*border-top: 1px solid #00e0d0;
   border-bottom: 1px solid #40474f;*/
-height: 2px;
-background-color: #ffffff;
+  height: 2px;
+  background-color: #ffffff;
 }
 li {
   list-style: none;
   padding: 5px;
 }
 .list {
-    padding-left:0;
+  padding-left: 0;
 }
 .social-icon {
-  color:#fff;
+  color: #fff;
+  width: 17px;
+  height: 17px;
 }
 
 .logo {
+  width: 136px;
+  padding: 30px auto;
 }
 .header {
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
-.fb-account{
+.fb-account {
+  display: flex;
+  padding-right: 10px;
 }

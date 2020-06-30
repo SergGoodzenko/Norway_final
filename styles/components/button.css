@@ -1,11 +1,11 @@
 .button {
   display: inline-block;
-  margin: 15px auto;
+  margin: 50px auto;
   border: 1px solid transparent;
   font-size: 16px;
   line-height: inherit;
   font-family: inherit;
-  padding: 15px 66px;
+  padding: 15px 100px;
   font-weight: bold;
   text-transform: none;
   text-decoration: none;
@@ -13,8 +13,7 @@
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-text-align: center;
-
+  text-align: center;
 }
 .button:hover {
   text-decoration: none;
@@ -29,15 +28,14 @@ text-align: center;
 .button-primary {
   border-radius: 133px;
   color: #ffffff;
-  background: #FF0032;
+  background: #ff0032;
   border: 3px solid transparent;
 }
 .button-primary:hover {
-  color: #FF0032;
+  color: #ff0032;
   background-color: #ffffff;
-  border: 3px solid #FF0032 ;
+  border: 3px solid #ff0032;
 }
-
 
 .button-success {
   color: #ffffff;
@@ -70,22 +68,23 @@ text-align: center;
   border-radius: 50%;
   background: transparent;
   border: 2px solid transparent;
-  padding:32px;
+  padding: 32px;
 }
-.button-play:hover{
-border: 2px solid aqua;
+.button-play:hover {
+  border: 2px solid aqua;
 }
 
-.button-social{
+.button-social {
   border-radius: 50%;
   background: transparent;
   border: 2px solid #fff;
-  padding:10px;
-
+  padding: 10px;
 }
-.button-social: hover{
+.button-social: hover {
   background: green;
   border: 2px solid #fff;
- 
-
+}
+.section-form button {
+  margin: 46px auto;
+  justify-content: center;
 }

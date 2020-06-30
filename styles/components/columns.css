@@ -10,19 +10,27 @@
 
 .row-large {
   margin: 0 -40px;
-
 }
 .row-large > .column {
   padding: 10px 40px;
 }
 
 .header-row {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .nowrap {
-	margin:0;
+  margin: 0;
   flex-wrap: nowrap;
 }
-.nowrap> .column {
-	padding: 1px;
+.nowrap > .column {
+  padding: 1px;
+}
+.aline-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
 }
