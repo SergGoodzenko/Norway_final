@@ -1,4 +1,12 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 *:last-child {
@@ -10,7 +18,7 @@ html {
   font-weight: 500;
   line-height: 1.15;
   background-color: #ffffff;
-  color: #3c3c3c;
+  color: #000000;
 }
 .wrapper {
   position: relative;
@@ -84,6 +92,8 @@ li {
 }
 .list {
   padding-left: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .social-icon {
@@ -91,28 +101,20 @@ li {
   width: 24px;
   height: 24px;
 }
-.logo {
-  width: 80%;
-  margin: 20px auto;
+
+.icon {
+  padding-right: 10px;
 }
 
 @media (min-width: 480px) {
-  .logo {
-    width: 136px;
-    padding: 30px;
+  html {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
-.logo-foot {
-  width: 135px;
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-}
-/*.fb-account {
-  display: flex;
-  padding-right: 10px;
-}*/
-.icon {
-  padding-right: 10px;
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 24px;
+  }
 }

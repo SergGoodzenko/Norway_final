@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  margin: 50px auto;
+  margin: 10px auto;
   border: 1px solid transparent;
   font-size: 16px;
   line-height: inherit;
@@ -14,6 +14,9 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .button:hover {
   text-decoration: none;
@@ -26,15 +29,17 @@
   width: 100%;
 }
 .button-primary {
-  border-radius: 133px;
+  border-radius: 50px;
   color: #ffffff;
   background: #ff0032;
   border: 3px solid transparent;
+  margin-top:20px;
 }
 .button-primary:hover {
   color: #ff0032;
   background-color: #ffffff;
   border: 3px solid #ff0032;
+  /* transition: all 0.3s ease 0s;*/
 }
 
 .button-social {
@@ -48,6 +53,31 @@
   border: 2px solid #fff;
 }
 .section-form button {
-  margin: 46px auto;
+  /*margin: 46px auto;*/
   justify-content: center;
+}
+/*.section-footer button {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.section-footer button {
+  transform: none;
+  position: relative;
+  left: 50%;
+  margin: 15px 0;
+}*/
+@media (min-width: 480px) {
+  .button {
+    /*margin: 50px auto;*/
+  }
+  .section-footer button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .button-primary {
+    border-radius: 133px;
+    margin-top:50px;
 }

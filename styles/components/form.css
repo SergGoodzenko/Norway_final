@@ -1,5 +1,6 @@
 .form-control {
   position: relative;
+  padding: 10px;
 }
 
 .input,
@@ -10,7 +11,7 @@
   padding: 15px;
   background: #f2f7ff;
   color: #373f55;
-  margin: 10px;
+  margin: 0 10px;
   background: #f2f7ff;
   border-radius: 33px;
   font-size: inherit;
@@ -39,6 +40,26 @@
   background-color: #f8f8f8;
   color: #999999;
   border-color: #999999;
+}
+
+.input::-webkit-input-placeholder,
+.textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.input::-moz-placeholder,
+.textarea::-moz-placeholder {
+  color: #999999;
+}
+
+.input:-ms-input-placeholder,
+.textarea:-ms-input-placeholder {
+  color: #999999;
+}
+
+.input::-ms-input-placeholder,
+.textarea::-ms-input-placeholder {
+  color: #999999;
 }
 
 .input::placeholder,
@@ -92,8 +113,14 @@
   bottom: 0;
   top: 0;
   width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-decoration: none;
 }

@@ -1,45 +1,24 @@
 .section {
   padding: 20px 0;
-  color: #ffffff;
+  /* color: #ffffff;*/
   position: relative;
-  text-align: center;
 }
-
-@media (min-width: 480px) {
-  .section {
-    padding: 90px 0;
-  }
+.header {
+  color: #000000;
 }
-.section-background,
-.section-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.section-hero {
+  background-color: #061e33;
+  color: #ffffff;
 }
 .section-background {
-  z-index: -2;
+  display: none;
 }
-.section-background > img {
-  height: 100%;
+.section-body {
+  padding: 10px 0;
 }
-/*.section-card {
-}
-.section-card .section-background {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.section-card .section-background > img {*/
 
-.section-overlay {
-  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
-  opacity: 0.85;
-  z-index: -1;
-}
 .section-title {
+  font-family: "GilroyB";
   font-size: 52px;
   line-height: 64px;
   color: #061e33;
@@ -48,55 +27,149 @@
 .section-description {
   font-size: 16px;
 }
-
-.section-hero {
-  padding: 0;
-  text-align: center;
-}
+/*hero*/
 .section-hero .hero-title {
-  font-size: 90px;
-  line-height: 110px;
+  font-size: 40px;
   margin-bottom: 0;
   color: #ffffff;
 }
-.section-description {
+
+.section-hero .section-description {
   margin: 25px auto 0;
   max-width: 643px;
 }
 
-.section-body {
-  padding: 200px 0;
-}
 .section-hero .section-header,
 .footer-nav {
   padding: 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
-
-.section-mountains {
-  min-height: 500px;
+.section-footer {
+  background-color: #061e33;
+  color: #ffffff;
 }
-.section-populartours {
-  background: #f2f7ff;
-}
-.section-card .section-background,
-.section-mountains {
-  display: none;
-}
-@media (min-width: 480px) {
-  .section-card .section-background,
-  .section-mountains {
-    display: block;
-  }
-}
-
 .title-footer {
   color: #ffffff;
   font-size: 24px;
   line-height: 29px;
 }
 
+.row .header-top {
+  text-align: center;
+}
+
 .form-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* text-align: center; */
+  /* justify-content: center; */
+  margin: 40px auto 50px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  max-width: 800px;
+}
+.section-populartours,
+.section-slider {
+  background: #f2f7ff;
+}
+.section-card .section-background,
+.section-mountains {
+  display: none;
+}
+.text-control {
+  margin: 10px 30px;
+  text-align: center;
+}
+
+/*Media 480*/
+@media (min-width: 480px) {
+  .section-background,
+  .section-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .section-background {
+    z-index: -2;
+  }
+  .section-background > img {
+    height: 100%;
+  }
+
+  .section-hero .hero-title {
+    font-size: 90px;
+    line-height: 110px;
+    margin-bottom: 0;
+  }
+  .section-hero .section-description {
+    color: #ffffff;
+  }
+  .section-hero {
+    background-color: transparent;
+  }
+  .section-card .section-background {
+    display: block;
+  }
+  .section-card {
+    background-image: url("../../Images/bgbig.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .section-card .section-content {
+    padding-bottom: 200px;
+  }
+
+  .section-body {
+    padding: 50px 0;
+  }
+  .section-footer {
+    background-color: transparent;
+  }
+}
+
+/**/
+
+@media (min-width: 640px) {
+  .section {
+    padding: 50px 0;
+  }
+  .section-card .section-content {
+    padding-bottom: 300px;
+  }
+  .section-mountains {
+    display: block;
+  }
+  .text-control {
+    margin: 10px 30px;
+    text-align: left;
+  }
+}
+@media (min-width: 960px) {
+  /*.section {
+    padding: 90px 0;
+  }*/
+  .section-body {
+    padding: 200px 0;
+  }
+  .section-card .section-content {
+    padding-bottom: 543px;
+  }
+  .section-mountains {
+    min-height: 500px;
+  }
 }

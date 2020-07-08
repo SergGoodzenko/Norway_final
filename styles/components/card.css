@@ -73,6 +73,7 @@
 .card-simple {
   overflow: hidden;
   border-radius: 25px;
+  margin: 0 20px;
 }
 .card-text {
   font-size: 16px;
@@ -80,4 +81,20 @@
   color: #464649;
   max-width: 497px;
   margin: ;
+}
+
+.card-name,
+.card-small {
+  margin: 10px;
+}
+.empty {
+  flex-grow: 1;
+}
+.card-content {
+  padding: 20px;
+}
+.card-small {
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
 }

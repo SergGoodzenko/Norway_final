@@ -38,7 +38,7 @@ $(document).ready(function() {
 $(".center").slick({
   centerMode: true,
   centerPadding: "60px",
-  slidesToShow: 3,
+  slidesToShow: 2,
   responsive: [
     {
       breakpoint: 768,
@@ -46,7 +46,7 @@ $(".center").slick({
         arrows: false,
         centerMode: true,
         centerPadding: "40px",
-        slidesToShow: 3
+        slidesToShow: 1
       }
     },
     {

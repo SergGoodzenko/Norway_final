@@ -25,22 +25,22 @@
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <div class="row header-top">
-            <div class="column width-1-1 width-1-3-sm">
-              <div class="row">
+          <div class="header-top">
+            <div class="header-item">
+              <div class="social">
                 <figure class="icon">
                   <i class="fa fa-phone" aria-hidden="true"></i>
                 </figure>
                 <span>+47-124-82-232</span>
               </div>
             </div>
-            <div class="column width-1-1 width-1-3-sm">
+            <div class="logo-header">
               <a href="#" class="logo logo-top"
                 ><img src="Images/North.png" alt="logo"
               /></a>
             </div>
-            <div class="column width-1-1 width-1-3-sm">
-              <div class="row social">
+            <div class="header-item">
+              <div class="social">
                 <a class="icon">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </a>
@@ -51,7 +51,7 @@
               </div>
             </div>
           </div>
-          <div class="burger-menu">
+          <div class="header-foot">
             <nav class="nav">
               <span class="nav-item is-active" href="#">Home</span>
               <a class="nav-item" href="#">Search for tours</a>
@@ -105,7 +105,7 @@
         <section class="section section-form">
           <div class="container">
             <h2 class="section-title">Search for tours</h2>
-            <form class="row form" method="/" action="handler.php">
+            <form class="row form" method="POST" action="handler.php">
               <div class="form-control width-1-1  width-1-2-sm  width-1-4-lg">
                 <label>
                   <span class="label">Category</span>
@@ -292,225 +292,398 @@
           <button class="button button-primary">View all daily tours</button>
         </section>
         <section class="section section-card">
-          <figure class="section-background">
+          <!--<figure class="section-background">
             <img src="Images/bgbig.png" alt="big" />
-          </figure>
+          </figure>-->
           <div class="container">
-            <h2 class="section-title">Daily tours</h2>
-            <div class="row">
-              <div
-                class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
-              >
-                <div class="card">
-                  <div class="card-img">
-                    <img src="Images/card12.png" alt="img" />
+            <div class="section-content">
+              <h2 class="section-title">Daily tours</h2>
+              <div class="row">
+                <div
+                  class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
+                >
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="Images/card12.png" alt="img" />
+                    </div>
+                    <div class="card-body">
+                      <div class="stars"></div>
+                      <span class="reviews">168 Reviews</span>
+                      <p class="card-title">
+                        Reindeer Feeding and Lasso Throwing
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <p class="duraicion">duration - 5 hours</p>
+                      <span class="price"> 90€ </span>
+                    </div>
                   </div>
-                  <div class="card-body">
-                    <div class="stars"></div>
-                    <span class="reviews">168 Reviews</span>
-                    <p class="card-title">
-                      Reindeer Feeding and Lasso Throwing
-                    </p>
+                </div>
+                <div
+                  class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
+                >
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="Images/card5.png" alt="img" />
+                    </div>
+                    <div class="card-body">
+                      <div class="stars"></div>
+                      <span class="reviews">168 Reviews</span>
+                      <p class="card-title">
+                        Reindeer Feeding and Lasso Throwing
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <p class="duraicion">duration - 5 hours</p>
+                      <span class="price"> 60€ </span>
+                    </div>
                   </div>
-                  <div class="card-footer">
-                    <p class="duraicion">duration - 5 hours</p>
-                    <span class="price"> 90€ </span>
+                </div>
+                <div
+                  class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
+                >
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="Images/card6.png" alt="img" />
+                    </div>
+                    <div class="card-body">
+                      <div class="stars"></div>
+                      <span class="reviews">168 Reviews</span>
+                      <p class="card-title">
+                        Reindeer Feeding and Lasso Throwing
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <p class="duraicion">duration - 5 hours</p>
+                      <span class="price"> 60€ </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
+                >
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="Images/card7.png" alt="img" />
+                    </div>
+                    <div class="card-body">
+                      <div class="stars"></div>
+                      <span class="reviews">168 Reviews</span>
+                      <p class="card-title">
+                        Reindeer Feeding and Lasso Throwing
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <p class="duraicion">duration - 5 hours</p>
+                      <span class="price"> 60€ </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
+                >
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="Images/card8.png" alt="img" />
+                    </div>
+                    <div class="card-body">
+                      <div class="stars"></div>
+                      <span class="reviews">168 Reviews</span>
+                      <p class="card-title">
+                        Reindeer Feeding and Lasso Throwing
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <p class="duraicion">duration - 5 hours</p>
+                      <span class="price"> 60€ </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
+                >
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="Images/card11.png" alt="img" />
+                    </div>
+                    <div class="card-body">
+                      <div class="stars"></div>
+                      <span class="reviews">168 Reviews</span>
+                      <p class="card-title">
+                        Reindeer Feeding and Lasso Throwing
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <p class="duraicion">duration - 5 hours</p>
+                      <span class="price"> 60€ </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
+                >
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="Images/card9.png" alt="img" />
+                    </div>
+                    <div class="card-body">
+                      <div class="stars"></div>
+                      <span class="reviews">168 Reviews</span>
+                      <p class="card-title">
+                        Reindeer Feeding and Lasso Throwing
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <p class="duraicion">duration - 5 hours</p>
+                      <span class="price"> 60€ </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
+                >
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="Images/card10.png" alt="img" />
+                    </div>
+                    <div class="card-body">
+                      <div class="stars"></div>
+                      <span class="reviews">168 Reviews</span>
+                      <p class="card-title">
+                        Reindeer Feeding and Lasso Throwing
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <p class="duraicion">duration - 5 hours</p>
+                      <span class="price"> 60€ </span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
-              >
-                <div class="card">
-                  <div class="card-img">
-                    <img src="Images/card5.png" alt="img" />
-                  </div>
-                  <div class="card-body">
-                    <div class="stars"></div>
-                    <span class="reviews">168 Reviews</span>
-                    <p class="card-title">
-                      Reindeer Feeding and Lasso Throwing
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <p class="duraicion">duration - 5 hours</p>
-                    <span class="price"> 60€ </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
-              >
-                <div class="card">
-                  <div class="card-img">
-                    <img src="Images/card6.png" alt="img" />
-                  </div>
-                  <div class="card-body">
-                    <div class="stars"></div>
-                    <span class="reviews">168 Reviews</span>
-                    <p class="card-title">
-                      Reindeer Feeding and Lasso Throwing
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <p class="duraicion">duration - 5 hours</p>
-                    <span class="price"> 60€ </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
-              >
-                <div class="card">
-                  <div class="card-img">
-                    <img src="Images/card7.png" alt="img" />
-                  </div>
-                  <div class="card-body">
-                    <div class="stars"></div>
-                    <span class="reviews">168 Reviews</span>
-                    <p class="card-title">
-                      Reindeer Feeding and Lasso Throwing
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <p class="duraicion">duration - 5 hours</p>
-                    <span class="price"> 60€ </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
-              >
-                <div class="card">
-                  <div class="card-img">
-                    <img src="Images/card8.png" alt="img" />
-                  </div>
-                  <div class="card-body">
-                    <div class="stars"></div>
-                    <span class="reviews">168 Reviews</span>
-                    <p class="card-title">
-                      Reindeer Feeding and Lasso Throwing
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <p class="duraicion">duration - 5 hours</p>
-                    <span class="price"> 60€ </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
-              >
-                <div class="card">
-                  <div class="card-img">
-                    <img src="Images/card11.png" alt="img" />
-                  </div>
-                  <div class="card-body">
-                    <div class="stars"></div>
-                    <span class="reviews">168 Reviews</span>
-                    <p class="card-title">
-                      Reindeer Feeding and Lasso Throwing
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <p class="duraicion">duration - 5 hours</p>
-                    <span class="price"> 60€ </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
-              >
-                <div class="card">
-                  <div class="card-img">
-                    <img src="Images/card9.png" alt="img" />
-                  </div>
-                  <div class="card-body">
-                    <div class="stars"></div>
-                    <span class="reviews">168 Reviews</span>
-                    <p class="card-title">
-                      Reindeer Feeding and Lasso Throwing
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <p class="duraicion">duration - 5 hours</p>
-                    <span class="price"> 60€ </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="column width-1-1  width-1-2-sm width-1-3-md width-1-4-lg"
-              >
-                <div class="card">
-                  <div class="card-img">
-                    <img src="Images/card10.png" alt="img" />
-                  </div>
-                  <div class="card-body">
-                    <div class="stars"></div>
-                    <span class="reviews">168 Reviews</span>
-                    <p class="card-title">
-                      Reindeer Feeding and Lasso Throwing
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <p class="duraicion">duration - 5 hours</p>
-                    <span class="price"> 60€ </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="button button-primary">View all daily tours</button>
+              <button class="button button-primary">View all daily tours</button></div>
+            
           </div>
         </section>
         <section class="section section-whoweare">
           <div class="container">
             <h2 class="section-title">Who we are?</h2>
             <div class="row aline-center space-between">
-              <div class="column width-1-1 width-1-2-sm">
-                <div class="row card-simple">
-                  <div class="column width-1-2">
-                    <div class="card-img">
-                      <img src="Images/1.png" alt="img" />
-                    </div>
-                  </div>
-                  <div class="column width-1-2">
-                    <div class="card-img">
-                      <img src="Images/2.png" alt="img" />
-                    </div>
-                  </div>
-                  <div class="column width-1-2">
-                    <div class="card-img">
-                      <img src="Images/3.png" alt="img" />
-                    </div>
-                  </div>
-                  <div class="column width-1-2">
-                    <div class="card-img">
-                      <img src="Images/4.png" alt="img" />
-                    </div>
+              <div class="column width-1-1 width-1-2-md">
+                <div class="card-simple">
+                  <div class="row">
+                      <div class="column width-1-2">
+                          <div class="card-img">
+                            <img src="Images/1.png" alt="img" />
+                          </div>
+                        </div>
+                        <div class="column width-1-2">
+                          <div class="card-img">
+                            <img src="Images/2.png" alt="img" />
+                          </div>
+                        </div>
+                        <div class="column width-1-2">
+                          <div class="card-img">
+                            <img src="Images/3.png" alt="img" />
+                          </div>
+                        </div>
+                        <div class="column width-1-2">
+                          <div class="card-img">
+                            <img src="Images/4.png" alt="img" />
+                          </div>
+                        </div>
                   </div>
                 </div>
               </div>
-              <div class="column width-1-1 width-1-2-sm">
-                <p class="card-text">
-                  Our company has years of experience in the world of tourism,
-                  providing excursions. We take care of our clients and all our
-                  staff is the most qualified professionals. We try to make our
-                  clients happy and make each excursion unforgettable for them.
-                  <br />
-                  We have the newest equipment everywhere you need it. We like
-                  animals and nature, that’s why our pets the happiest and the
-                  most beautiful. <br />
-                  Let’s travel with us. We will make your life brighter
-                </p>
+              <div class="column width-1-1 width-1-2-md">
+                <div class="text-control">
+                    <p class="card-text">
+                        Our company has years of experience in the world of tourism,
+                        providing excursions. We take care of our clients and all our
+                        staff is the most qualified professionals. We try to make our
+                        clients happy and make each excursion unforgettable for them.
+                    </p>
+                        <p>We have the newest equipment everywhere you need it. We like
+                        animals and nature, that’s why our pets the happiest and the
+                        most beautiful.</p> 
+
+                      <p>  Let’s travel with us. We will make your life brighter
+                      </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <section class="section section-slider">
+            <h2 class="section-title">Reviews</h2>
           <div class="center">
-            <div>your content</div>
-            <div>your content</div>
-            <div>your content</div>
+              <div class="slider-item-small">
+                  <div class="card ">
+                      <div class="card-content">
+                        <div class="card-header">
+                         <div class="row space-between">
+                          <div class="card-image card-small">
+                            <img src="Images/imgsmall1.png" alt="img" />
+                          </div>
+                          <div class="card-name">
+                            <h3 class="name">
+                                 John Smith
+                            </h3>
+                            <p class="profession">Professor</p>
+                          </div>
+                          <div class="empty">
+                          </div>
+                          <div class="stars"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                           <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sint.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="reviews">168 Reviews</span>
+                        </div>
+                     </div>  
+                  </div>
+              </div>
+              <div class="slider-item-small">
+                  <div class="card ">
+                      <div class="card-content">
+                        <div class="card-header">
+                         <div class="row space-between">
+                          <div class="card-image card-small">
+                            <img src="Images/smallcard1.png" alt="img" />
+                          </div>
+                          <div class="card-name">
+                            <h3 class="name">
+                                 John Smith
+                            </h3>
+                            <p class="profession">Professor</p>
+                          </div>
+                          <div class="empty">
+                          </div>
+                          <div class="stars"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                           <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sint.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="reviews">168 Reviews</span>
+                        </div>
+                     </div>  
+                  </div>
+              </div>
+              <div class="slider-item-small">
+                  <div class="card ">
+                      <div class="card-content">
+                        <div class="card-header">
+                         <div class="row space-between">
+                          <div class="card-image card-small">
+                            <img src="Images/imgsmall1.png" alt="img" />
+                          </div>
+                          <div class="card-name">
+                            <h3 class="name">
+                                 John Smith
+                            </h3>
+                            <p class="profession">Professor</p>
+                          </div>
+                          <div class="empty">
+                          </div>
+                          <div class="stars"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                           <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sint.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="reviews">168 Reviews</span>
+                        </div>
+                     </div>  
+                  </div>
+              </div>
+              <div class="slider-item-small">
+                  <div class="card ">
+                      <div class="card-content">
+                        <div class="card-header">
+                         <div class="row space-between">
+                          <div class="card-image card-small">
+                            <img src="Images/smallcard1.png" alt="img" />
+                          </div>
+                          <div class="card-name">
+                            <h3 class="name">
+                                 John Smith
+                            </h3>
+                            <p class="profession">Professor</p>
+                          </div>
+                          <div class="empty">
+                          </div>
+                          <div class="stars"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                           <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sint.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="reviews">168 Reviews</span>
+                        </div>
+                     </div>  
+                  </div>
+              </div>
+              <div class="slider-item-small">
+                  <div class="card ">
+                      <div class="card-content">
+                        <div class="card-header">
+                         <div class="row space-between">
+                          <div class="card-image card-small">
+                            <img src="Images/imgsmall1.png" alt="img" />
+                          </div>
+                          <div class="card-name">
+                            <h3 class="name">
+                                 John Smith
+                            </h3>
+                            <p class="profession">Professor</p>
+                          </div>
+                          <div class="empty">
+                          </div>
+                          <div class="stars"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                           <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sint.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="reviews">168 Reviews</span>
+                        </div>
+                     </div>  
+                  </div>
+              </div>
+              <div class="slider-item-small">
+                  <div class="card ">
+                      <div class="card-content">
+                        <div class="card-header">
+                         <div class="row space-between">
+                          <div class="card-image card-small">
+                            <img src="Images/smallcard1.png" alt="img" />
+                          </div>
+                          <div class="card-name">
+                            <h3 class="name">
+                                 John Smith
+                            </h3>
+                            <p class="profession">Professor</p>
+                          </div>
+                          <div class="empty">
+                          </div>
+                          <div class="stars"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                           <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sint.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="reviews">168 Reviews</span>
+                        </div>
+                     </div>  
+                  </div>
+              </div>
           </div>
         </section>
 
@@ -522,22 +695,21 @@
             <div class="section-foreground">
                 <div class="section-content">
                   <h3 class="section-title title-footer">Subscribe to our newsletter</h3>
-                <div class="form-footer">
-                    <div class="row aline-center">
-                        <form class="form-control width-1-1  width-2-3-md" method="#">
-                            <label>
-                              <span class="label">Enter e-mail</span>
-                              <input class="select" name="category" value="Email@example.com"/>
-                            </label>
-                      </form>
-                      <div class="column  width-1-1 width-1-3-md">
-                          <button class="button button-primary">Send</button>
-                      </div>
-                    </div>
-                </div>
-                    
+                  <div class="form-footer">
+                         <div class="column width-1-1  width-2-3-lg">
+                            <form class="form-control" method="POST">
+                                <label>
+                                  <span class="label">Enter e-mail</span>
+                                  <input class="select" name="category" value="Email@example.com"/>
+                                </label>
+                            </form>
+                         </div>
+                         <div class="column  width-1-1 width-1-3-lg">
+                          <button class="button button-primary button-footer">Send</button>
+                         </div>
+                  </div>
                   <div class="row space-between">
-                      <div class="column width-1-3 width-1-3-sm">
+                      <div class="column width-1-1 width-1-2-sm width-1-5-md">
                           <h3>Contacts</h3>
                           <ul class="list row">
                             <li class="column width-1-1 row">
@@ -551,7 +723,7 @@
                               <span class="column width-3-4">New York/Lorem ipsum dolor</span
                               >
                             </li>
-                            <li class="column width-1-1 row">
+                            <li class="column width-1-1  row">
                                 <figure class="column width-1-4">
                                   <img
                                     class="social-icon"
@@ -565,8 +737,8 @@
                               </li>
                           </ul>
                      </div>
-                    <div class="column width-1-3-sm width-1-1">
-                      <h3>Social</h3>
+                    <div class="column width-1-1 width-1-2-sm width-1-5-md">
+                        <h3>Social</h3>
                         <ul class="list row nowrap">
                             <li>
                               <button class="button-social">
@@ -595,10 +767,11 @@
                                 />
                               </button>
                             </li>
+                        </ul>
                     </div>
-                    <div class="column width-1-3 width-1-3-sm">
+                    <div class="column width-1-1 width-1-5-md">
                         <a href="#" class="logo-foot"
-                ><img src="Images/The North..svg" alt="logo"/></a>
+                ><img src="Images/TheNorth.svg" alt="logo"/></a>
                       </div>
                 </div>
               </div>

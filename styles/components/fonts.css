@@ -1,7 +1,15 @@
 @font-face {
-  font-family: Gilroy; /* Имя шрифта */
-  src: url(../fonts/Gilroy-Light.otf); /* Путь к файлу со шрифтом */
+  font-family: "GilroyB";
+  src: url("../../fonts/gilroy-extrabold.woff") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../fonts/gilroy-light.woff") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
 p {
-  font-family: Gilroy;
+  font-family: "Gilroy";
 }
